@@ -3,6 +3,7 @@ import './Home.css';
 import VerticalTimeline from './VerticalTimeline';
 import myFace from '../../Assets/my_face2.png';
 import background from '../../Assets/home_background.png';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -38,9 +39,10 @@ function Home() {
       <div className="cta-section">
         <h2>Want to know what else I've been up to?</h2>
         <div className="cta-buttons">
-          <a href="/projects" className="cta-button">Projects</a>
-          <a href="/resume" className="cta-button">Resume</a>
-          <a href="/contact" className="cta-button">Contact</a>
+          <Link to="/Projects" className="cta-button">Projects</Link>
+<Link to="/Resume" className="cta-button">Resume</Link>
+<Link to="/Contact" className="cta-button">Contact</Link>
+
         </div>
       </div>
     </div>
