@@ -1,0 +1,135 @@
+.project-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;   /* changed from center */
+  z-index: 1000;
+  padding-top: 200px;        /* offset for navbar */
+  padding-bottom: 200px;      /* optional bottom margin */
+}
+
+
+/* Outer modal card with fixed height */
+.project-popup-card-solid {
+  background: white;
+  width: 75vw;
+  max-width: 1100px;
+  height: 70vh;
+  border-radius: 16px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Scrollable inner container */
+.popup-scrollable-content {
+  padding: 3rem;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Close button pinned to top */
+.popup-close {
+  position: absolute;
+  top: 18px;
+  right: 26px;
+  font-size: 1.8rem;
+  color: #777;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.popup-close:hover {
+  color: #0073e6;
+}
+
+/* Layout grid */
+.popup-grid-solid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* Introductory section left/right */
+.popup-left-solid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup-right-solid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title and section headers */
+.popup-title-solid {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin-bottom: 1.8rem;
+}
+
+.popup-subtitle {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #222;
+  font-weight: 700;
+}
+
+/* Content styling */
+.popup-detail-list p,
+.popup-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.popup-label {
+  font-weight: 600;
+  color: #0073e6;
+  margin-right: 0.4rem;
+}
+
+.popup-section {
+  margin-bottom: 2.5rem;
+}
+
+.popup-section ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  color: #444;
+}
+
+/* Image style */
+.popup-image-solid {
+  width: 100%;
+  max-width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.popup-image-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.popup-image-grid img {
+  flex: 1;
+  min-width: 45%;
+  max-width: 48%;
+}

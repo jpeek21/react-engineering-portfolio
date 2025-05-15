@@ -1,0 +1,94 @@
+.contact-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 60px 40px;
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form-section,
+.contact-info-section {
+  flex: 1;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.contact-form-section h2,
+.contact-info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.contact-form button {
+  background-color: #ff2b6a;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.contact-info-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkedin-icon {
+  width: 48px;
+  margin-bottom: 12px;
+}
+
+.contact-info-section p {
+  margin: 10px 0 4px;
+  font-weight: 600;
+}
+
+.contact-info-section a {
+  color: #000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .contact-form-section,
+  .contact-info-section {
+    max-width: 100%;
+  }
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 20px;
+}

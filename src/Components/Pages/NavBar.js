@@ -1,29 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../../Assets/logo.png'; // ✅ Correct
-import { Button } from './Button'; // ✅ Added
+import { Link, useLocation } from 'react-router-dom';
+import logo from '../../Assets/logo.png';
+import { Button } from './Button';
 import './NavBar.css';
-
 
 function Navbar() {
   const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+  const location = useLocation();
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  const [button, setButton] = useState(true)
 
-  
   const showButton = () => {
-    if(window.innerWidth <= 960) {
-        setButton(false);
-    } else {
-        setButton(true);
-    }
+    setButton(window.innerWidth > 960);
   };
 
   useEffect(() => {
     showButton();
+    window.addEventListener('resize', showButton);
+    return () => window.removeEventListener('resize', showButton);
   }, []);
+
+  const getLinkClass = (path) =>
+    location.pathname === path ? 'nav-links nav-links-active' : 'nav-links';
 
   return (
     <>
@@ -31,7 +31,6 @@ function Navbar() {
         <div className="navbar-container">
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <img src={logo} alt="Logo" className="logo-image" />
-            JONATHAN PEEK
           </Link>
 
           <div className='menu-icon' onClick={handleClick}>
@@ -40,27 +39,26 @@ function Navbar() {
 
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/Home' className='nav-links' onClick={closeMobileMenu}>
-                Home
-              </Link>
+              <Link to="/" className={getLinkClass('/')} onClick={closeMobileMenu}>Home</Link>
             </li>
             <li className='nav-item'>
-              <Link to='/Research' className='nav-links' onClick={closeMobileMenu}>
-                Research
-              </Link>
+              <Link to='/Projects' className={getLinkClass('/Projects')} onClick={closeMobileMenu}>Projects</Link>
             </li>
             <li className='nav-item'>
-              <Link to='/Skills' className='nav-links' onClick={closeMobileMenu}>
-                Skills
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/Contact' className='nav-links' onClick={closeMobileMenu}>
-                Contact
-              </Link>
+              <Link to='/Resume' className={getLinkClass('/Resume')} onClick={closeMobileMenu}>Resume</Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>CONTACT</Button>}
+
+          {/* Rightmost Contact Button */}
+          {button && (
+            <Link to="/Contact">
+              <Button
+                buttonStyle={location.pathname === '/Contact' ? 'btn--primary' : 'btn--outline'}
+              >
+                CONTACT
+              </Button>
+            </Link>
+          )}
         </div>
       </nav>
     </>

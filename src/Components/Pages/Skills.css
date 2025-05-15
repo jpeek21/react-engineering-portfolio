@@ -1,0 +1,10 @@
+.skills-page {
+  min-height: 100vh;
+  background-image: url('https://via.placeholder.com/1600x900?text=Skills+BG');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
