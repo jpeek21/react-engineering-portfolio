@@ -44,7 +44,7 @@ const experience = [
     description: 'Mechanical Engineering Intern (Summer 2024)',
     roles: 'Client/site visits, energy calculations, regulation checks, drafting MEP designs and putting together and delivering completed design proposals.',
     accomplishments: 'Succesfully completed design projects ranging from schools, restaurants, and hospitals, per both client and government specifications.',
-    takeaways: 'Efficacy and discipline in work is not a matter of brute force, but prioritization and communication with your team.'
+    takeaways: 'Efficacy in work is not a matter of brute force, but prioritization and communication with your team.'
   },
   {
     title: 'New West Medical',
