@@ -33,6 +33,7 @@ function Home() {
 
       {/* Timeline Section */}
       <VerticalTimeline />
+
     </div>
   );
 }
