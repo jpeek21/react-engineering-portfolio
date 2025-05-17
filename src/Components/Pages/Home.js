@@ -4,7 +4,6 @@ import VerticalTimeline from './VerticalTimeline';
 import myFace from '../../Assets/my_face2.png';
 import background from '../../Assets/home_background.png';
 import { Link } from 'react-router-dom';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function Home() {
   return (
