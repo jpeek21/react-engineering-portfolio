@@ -39,13 +39,13 @@ function Home() {
   <h2>Want to know what else I've been up to?</h2>
   <ul className="cta-buttons">
     <li className="cta-item">
-      <Link to="/Projects" className="cta-button">Projects</Link>
+      <Link to="/react-engineering-portfolio/#/Projects" className="cta-button">Projects</Link>
     </li>
     <li className="cta-item">
-      <Link to="/Resume" className="cta-button">Resume</Link>
+      <Link to="/react-engineering-portfolio/#/Resume" className="cta-button">Resume</Link>
     </li>
     <li className="cta-item">
-      <Link to="/Contact" className="cta-button">Contact</Link>
+      <Link to="/react-engineering-portfolio/#/Contact" className="cta-button">Contact</Link>
     </li>
   </ul>
 </div>
