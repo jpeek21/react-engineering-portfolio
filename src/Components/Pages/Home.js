@@ -35,20 +35,16 @@ function Home() {
       <VerticalTimeline />
 
       {/* CTA Section */}
-      <div className="cta-section">
+     <div className="cta-section">
   <h2>Want to know what else I've been up to?</h2>
-  <ul className="cta-buttons">
-    <li className="cta-item">
-      <Link to="/react-engineering-portfolio/#/Projects" className="cta-button">Projects</Link>
-    </li>
-    <li className="cta-item">
-      <Link to="/react-engineering-portfolio/#/Resume" className="cta-button">Resume</Link>
-    </li>
-    <li className="cta-item">
-      <Link to="/react-engineering-portfolio/#/Contact" className="cta-button">Contact</Link>
-    </li>
-  </ul>
+  <div className="cta-buttons">
+    <a href="#/Projects" className="cta-button">Projects</a>
+<a href="#/Resume" className="cta-button">Resume</a>
+<a href="#/Contact" className="cta-button">Contact</a>
+
+  </div>
 </div>
+
 
     </div>
   );
