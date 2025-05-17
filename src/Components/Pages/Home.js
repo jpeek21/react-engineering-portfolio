@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import VerticalTimeline from './VerticalTimeline';
 import myFace from '../../Assets/my_face2.png';
 import background from '../../Assets/home_background.png';
-import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -35,17 +35,14 @@ function Home() {
       <VerticalTimeline />
 
       {/* CTA Section */}
-     <div className="cta-section">
-  <h2>Want to know what else I've been up to?</h2>
-  <div className="cta-buttons">
-    <a href="#/Projects" className="cta-button">Projects</a>
-<a href="#/Resume" className="cta-button">Resume</a>
-<a href="#/Contact" className="cta-button">Contact</a>
-
-  </div>
-</div>
-
-
+      <div className="cta-section">
+        <h2>Want to know what else I've been up to?</h2>
+        <div className="cta-buttons">
+          <Link to="/Projects" className="cta-button">Projects</Link>
+          <Link to="/Resume" className="cta-button">Resume</Link>
+          <Link to="/Contact" className="cta-button">Contact</Link>
+        </div>
+      </div>
     </div>
   );
 }
