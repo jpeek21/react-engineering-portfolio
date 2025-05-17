@@ -7,25 +7,21 @@ import Research from './Components/Pages/Research';
 import Skills from './Components/Pages/Skills';
 import Projects from './Components/Pages/Projects';
 import Contact from './Components/Pages/Contact';
-import Resume from './Components/Pages/Resume'; // ✅ Add this
-
-
-
+import Resume from './Components/Pages/Resume';
 
 function App() {
   return (
-    <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path='/Research' element={<Research />} />
-          <Route path='/Projects' element={<Projects />} />
-          <Route path='/Contact' element={<Contact />} />
-          <Route path='/Resume' element={<Resume />} /> {/* ✅ New */}
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Research" element={<Research />} />
+        <Route path="/Skills" element={<Skills />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Resume" element={<Resume />} />
+      </Routes>
+    </Router>
   );
 }
 
