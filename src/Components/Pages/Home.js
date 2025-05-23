@@ -38,9 +38,12 @@ function Home() {
       <div className="cta-section">
         <h2>Want to know what else I've been up to?</h2>
         <div className="cta-buttons">
-          <Link to="/Projects" className="cta-button">Projects</Link>
-          <Link to="/Resume" className="cta-button">Resume</Link>
-          <Link to="/Contact" className="cta-button">Contact</Link>
+          <div className="cta-buttons">
+  <Link to="/Projects" className="nav-links">Projects</Link>
+  <Link to="/Resume" className="nav-links">Resume</Link>
+  <Link to="/Contact" className="nav-links">Contact</Link>
+</div>
+
         </div>
       </div>
     </div>
