@@ -17,7 +17,6 @@
 }
 
 .services {
-  background-image: url('C:\Users\jonat\react-engineering-portfolio\src/images/image1.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +25,6 @@
 }
 
 .products {
-  background-image: url('C:\Users\jonat\react-engineering-portfolio\src/images/image1.png');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -35,7 +33,6 @@
 }
 
 .sign-up {
-  background-image: url('C:\Users\jonat\react-engineering-portfolio\src/images/image1.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
