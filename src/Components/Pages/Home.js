@@ -34,6 +34,15 @@ function Home() {
       {/* Timeline Section */}
       <VerticalTimeline />
 
+      {/* CTA Section */}
+      <div className="cta-section">
+        <h2>Explore More</h2>
+        <div className="cta-buttons">
+          <Link to="/Projects" className="cta-button">Projects</Link>
+          <Link to="/Resume" className="cta-button">Resume</Link>
+          <Link to="/Contact" className="cta-button">Contact</Link>
+        </div>
+      </div>
     </div>
   );
 }
