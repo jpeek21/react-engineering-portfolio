@@ -34,7 +34,6 @@ export default function VerticalTimeline() {
 
 useEffect(() => {
   const handleScroll = () => {
-    const scrollTop = window.scrollY;
 
     // Ensure background year is always shown
     setTimelineStarted(true);
