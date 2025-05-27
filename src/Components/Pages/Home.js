@@ -36,7 +36,7 @@ function Home() {
 
       {/* CTA Section */}
       <div className="cta-section">
-        <h2>Explore More</h2>
+        <h2>Check out what else I've been up to!</h2>
         <div className="cta-buttons">
           <Link to="/Projects" className="cta-button">Projects</Link>
           <Link to="/Resume" className="cta-button">Resume</Link>
