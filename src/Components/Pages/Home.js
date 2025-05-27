@@ -33,14 +33,6 @@ function Home() {
 
       {/* Timeline Section */}
       <VerticalTimeline />
-
-      {/* CTA Section */}
-      <div className="cta-section">
-        <h2>Want to know what else I've been up to? Check out my Projects Tab!</h2>
-
-
-        </div>
-      </div>
     </div>
   );
 }
